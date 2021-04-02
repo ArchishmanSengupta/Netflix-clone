@@ -1,0 +1,11 @@
+.banner{
+    position: relative;
+    height: 500px;
+    color: white;
+    object-fit: contain;
+}
+.banner__contents{
+
+    margin-left: 30px;
+    padding-top: 140px;
+}

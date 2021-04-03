@@ -1,8 +1,9 @@
 .banner{
     position: relative;
-    height: 500px;
+    height: 480px;
     color: white;
     object-fit: contain;
+    padding-top: 200px;
 }
 .banner__contents{
 
@@ -26,12 +27,8 @@
     height: 100px;
 }
 .banner--fadeBottom{
-    height: 7.4rem;
-    background-image: linear-gradient(
-        180 deg,
-        transparent,
-        rgba(37,37,37,0.61),
-        #111
+    height: 9.4rem;
+    background-image: linear-gradient(180deg,transparent,rgba(37,37,37,0.61),#111
     );
 }
 .banner__button{

@@ -1,7 +1,7 @@
 //typically store in 
 //{process.env.API_KEY}
 
-const API_KEY="f81980ff410e46f422d64ddf3a56dddd";
+const API_KEY="a1997a129ebe7ff7a90bc3cc8ea4f266";
 const requests={
     fetchTrending: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
     fetchNetflixOriginals: `/discover/tv?api_key=${API_KEY}&with_networks=213`,

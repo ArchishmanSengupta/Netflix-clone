@@ -9,7 +9,34 @@
     width: 100%;
     z-index: 1;
     height: 100vh;
+    background: rgba(0,0,0,0.4);
+    background-image: linear-gradient(
+        to top,
+        rgba(0,0,0,0.8) 0,
+        rgba(0,0,0,0) 60%,
+        rgba(0,0,0,0.8) 100%
+    );
+}
+.loginScreen__body >h1{
+    font-size: 3.125rem;
+    margin-bottom: 20px;
+}
+.loginScreen__body >h2{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 30px;
 
+}
+.loginScreen__body{
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    color: #fff;
+    padding: 20px;
+    margin-left:500px;
+    margin-right: 500px;
+    text-align: center;
+    
 }
 .loginScreen__logo{
     position: fixed;

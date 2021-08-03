@@ -6,25 +6,32 @@ import {useEffect } from 'react';
 import HomeScreen from "./screens/HomeScreen";
 import LoginScreen from "./screens/LoginScreen";
 import {auth} from './screens/firebase';
+import {useDispatch, useSelector} from 'react-redux';
+import {logout , login, selectUser} from './features/userSlice';
 // React router Dom
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
 } from "react-router-dom";
 
 function App() {
   /* a pushing mechanism to the LoginScreen,
    it renders and goes to LoginScreen if the user is null*/
-  const user=null;
+  const user=useSelector(selectUser);
+  const dispatch =useDispatch();
 
   useEffect(() => {
     const unsubscribe=auth.onAuthStateChanged((userAuth)=>{
       if(userAuth){
         console.log(userAuth);
+        dispatch(login({
+          uid: userAuth.uid,
+          email: userAuth.email,
+        }));
       }else{
-
+        dispatch(logout);
       }
     });
 

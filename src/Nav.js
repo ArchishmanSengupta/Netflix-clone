@@ -1,13 +1,16 @@
 import React, { useEffect,useState } from 'react'
 import "./Nav.css"
 import {useHistory} from 'react-router-dom';
+// import { auth } from "src/screens/firebase";
+// import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 function Nav() {
     const [show,handleshow]=useState(false);
     //useSate for initializing a variable
 
     // HISTORY 
     const history = useHistory();
-
+    // DropDown
+    //const [dropdown, setDropdown] = useState(false);
     const transitionNavBar=()=>{
         if(window.scrollY>100)
         {
@@ -17,7 +20,13 @@ function Nav() {
             handleshow(false);
         }
     };
-
+    // const handleDropdown = () => {
+    //     if (!dropdown) {
+    //       setDropdown(true);
+    //     } else {
+    //       setDropdown(false);
+    //     }
+    //   };
     useEffect(()=>{
         window.addEventListener("scroll",transitionNavBar);
         return()=>window.removeEventListener("scroll",transitionNavBar);

@@ -24,9 +24,24 @@ function ProfileScreen() {
                 <div className="profileScreen__details">
                     <h2>{user.email}</h2>
                     <div className="profileScreen__plans">
+                        <h3> Plans (Curent Plan: premium)</h3>
+
+                        <h4> Renewal Date: 04/08/2022</h4>
+                        <div className="profileScreen__money">
+                            <h4> Netlfix Standard </h4>
+                            <button className="profileScreen__standard"> Subscribe
+                        </button>
+                        <h4> Netlfix Basic</h4>
+                            <button className="profileScreen__standard"> Subscribe
+                        </button>
+                        <h4> Netlfix Premium </h4>
+                            <button className="profileScreen__standard"> Subscribe
+                        </button>
+
+                        </div>
                         <button onClick={()=> auth.signOut()}
                         className="profileScreen__signOut"> Sign Out
-                            </button>
+                        </button>
                     </div>
                 </div>
             </div>

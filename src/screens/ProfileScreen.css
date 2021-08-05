@@ -44,3 +44,33 @@
    cursor: pointer;
    border: none;
 }
+.profileScreen__plans{
+    margin-top:30px;
+}
+.profileScreen__plans>h3{
+    border-bottom: 1px solid #283c3d;
+    padding-bottom: 10px;
+}
+.profileScreen__plans> h4{
+    font-size: 30px;
+    font-weight: 100;
+    margin-bottom: 1px solid #282c2d;
+    margin-bottom:  20px;
+    color: rgb(201, 197, 197);
+}
+.profileScreen__money> h4{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.profileScreen__standard{
+    padding: 10px 20px;
+    font-size: 1 rem;
+    margin-top: 5% ;
+    padding: 15px;
+    width: 20%;
+    color: #fff;
+    background-color: #e50914;
+    cursor: pointer;
+    border: none;
+}

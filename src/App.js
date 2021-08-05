@@ -5,6 +5,7 @@ import './App.css';
 import {useEffect } from 'react';
 import HomeScreen from "./screens/HomeScreen";
 import LoginScreen from "./screens/LoginScreen";
+import ProfileScreen from './screens/ProfileScreen';
 import {auth} from './screens/firebase';
 import {useDispatch, useSelector} from 'react-redux';
 import {logout , login, selectUser} from './features/userSlice';
@@ -43,6 +44,9 @@ function App() {
        
        {!user? (<LoginScreen />):
        (<Switch>
+         <Route path='/profile'>
+           <ProfileScreen />
+         </Route>
         {/*exact is to not render other paths, 
         it will only render the omw page*/}
           <Route exact path="/"> 
